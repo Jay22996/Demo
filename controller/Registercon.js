@@ -25,6 +25,19 @@ exports.login = async (req, res) => {
         });
     }
 }
+
+exports.find_User = async (req, res) => {
+
+  var _id = req.params.id;
+
+    console.log(_id);
+
+  var data = await registermodel.findById(_id);
+  res.status(200).json({
+    status: "user registered",
+    data,
+  });
+}
       
     
   
