@@ -9,7 +9,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 const corsOptions = {
-  origin:"http://localhost:3001",
+  origin:"https://enthusiastic-gilet-fox.cyclic.app",
   methods:"GET , POST",
   credentials: true,
 }
