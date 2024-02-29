@@ -9,7 +9,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 const corsOptions = {
-  origin:"https://demo-api-uh6f.onrender.com",
+  origin:"http://localhost:3001",
   methods:"GET , POST",
   credentials: true,
 }
