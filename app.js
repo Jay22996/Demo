@@ -9,9 +9,9 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 const corsOptions = {
-  origin:"https://enthusiastic-gilet-fox.cyclic.app",
-  methods:"GET , POST",
-  credentials: true,
+  // origin:"https://enthusiastic-gilet-fox.cyclic.app",
+  // methods:"GET , POST",
+  // credentials: true,
 }
 var app = express();
 app.use(cors(corsOptions));
