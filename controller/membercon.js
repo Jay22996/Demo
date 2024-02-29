@@ -17,7 +17,7 @@ exports.find = async (req,res) => {
     var data = await add_member.find()
 
     res.status(200).json({
-        status :"views data",
+        // status :"views data",
         data
     })
 }
