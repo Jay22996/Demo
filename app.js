@@ -1,6 +1,6 @@
 var createError = require('http-errors');
 var express = require('express');
-// var cors = require('cors')
+var cors = require('cors')
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
@@ -8,13 +8,13 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
-// const corsOptions = {
-//   origin:"https://demo-api-uh6f.onrender.com",
-//   methods:"GET , POST",
-//   credentials: true,
-// }
-// var app = express();
-// app.use(cors(corsOptions));
+const corsOptions = {
+  origin:"https://demo-api-uh6f.onrender.com",
+  methods:"GET , POST",
+  credentials: true,
+}
+var app = express();
+app.use(cors(corsOptions));
 
 var app = express();
 
